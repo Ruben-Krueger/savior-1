@@ -48,7 +48,6 @@
       </div>
     </div>
   </section>
-
 </template>
 
 <script lang="js">
