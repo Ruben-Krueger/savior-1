@@ -49,14 +49,14 @@
                 <i class="mdi mdi-poll-box text-teal icon-lg"></i>
               </div>
               <div class="float-right">
-                <p class="card-text text-right">Sales</p>
+                <p class="card-text text-right">Top spending category</p>
                 <div class="fluid-container">
-                  <h3 class="card-title font-weight-bold text-right mb-0">5693</h3>
+                  <h3 class="card-title font-weight-bold text-right mb-0">{{ topCategory }}</h3>
                 </div>
               </div>
             </div>
             <p class="text-muted mt-3">
-              <i class="mdi mdi-calendar mr-1" aria-hidden="true"></i> Weekly Sales
+              <i class="mdi mdi-calendar mr-1" aria-hidden="true"></i> As expected!
             </p>
           </div>
         </div>
@@ -69,14 +69,14 @@
                 <i class="mdi mdi-account-location text-info icon-lg"></i>
               </div>
               <div class="float-right">
-                <p class="card-text text-right">Employees</p>
+                <p class="card-text text-right">Most expensive purchase</p>
                 <div class="fluid-container">
-                  <h3 class="card-title font-weight-bold text-right mb-0">246</h3>
+                  <h3 class="card-title font-weight-bold text-right mb-0">$246</h3>
                 </div>
               </div>
             </div>
             <p class="text-muted mt-3">
-              <i class="mdi mdi-reload mr-1" aria-hidden="true"></i> Product-wise sales
+              <i class="mdi mdi-reload mr-1" aria-hidden="true"></i> Lower than last month's
             </p>
           </div>
         </div>
@@ -95,7 +95,7 @@
                     <th class="border-bottom-0">Date</th>
                     <th class="border-bottom-0">Type</th>
                     <th class="border-bottom-0">Merchant</th>
-                    <th class="border-bottom-0">Payment Status</th>
+                    <th class="border-bottom-0">Status</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -125,191 +125,30 @@
           <div class="card-body">
             <h5 class="card-title mb-4">Suggestions</h5>
             <div class="fluid-container">
-              <div class="row ticket-card mt-3 pb-2 border-bottom">
-                <div class="col-1">
-                  <img class="img-sm rounded-circle" src="../assets/images/faces/face1.jpg" alt="profile image">
-                </div>
-                <div class="ticket-details col-9">
-                  <div class="d-flex">
-                    <p class="text-primary font-weight-bold mr-2 mb-0 no-wrap">James :</p>
-                    <p class="font-weight-medium mr-1 mb-0">[#23047]</p>
-                    <p class="font-weight-bold mb-0 ellipsis">Lorem ipsum dolor sit amet, consectetur.</p>
-                  </div>
-                  <p class="text-small text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum sequi a, nostrum.</p>
-                  <div class="row text-muted d-flex">
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Last responded :</p>
-                      <p class="Last-responded mr-2 mb-0">3 hours ago</p>
-                    </div>
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Due in :</p>
-                      <p class="Last-responded mr-2 mb-0">2 Days</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="ticket-actions col-2">
-                  <div class="btn-group dropdown">
-                    <button type="button" class="btn btn-teal dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Manage
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#"><i class="fa fa-reply fa-fw"></i>Quick reply</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-history fa-fw"></i>Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><i class="fa fa-check text-success fa-fw"></i>Resolve Issue</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-times text-danger fa-fw"></i>Close Issue</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row ticket-card mt-3 pb-2 border-bottom">
-                <div class="col-1">
-                  <img class="img-sm rounded-circle" src="../assets/images/faces/face2.jpg" alt="profile image">
-                </div>
-                <div class="ticket-details col-9">
-                  <div class="d-flex">
-                    <p class="text-primary font-weight-bold mr-2 mb-0 no-wrap">Stella :</p>
-                    <p class="font-weight-medium mr-1 mb-0">[#23135]</p>
-                    <p class="font-weight-bold mb-0 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente.</p>
-                  </div>
-                  <p class="text-small text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptates fuga quae?</p>
-                  <div class="row text-muted d-flex">
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Last responded :</p>
-                      <p class="Last-responded mr-2 mb-0">3 hours ago</p>
-                    </div>
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Due in :</p>
-                      <p class="Last-responded mr-2 mb-0">2 Days</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="ticket-actions col-2">
-                  <div class="btn-group dropdown">
-                    <button type="button" class="btn btn-teal dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Manage
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#"><i class="fa fa-reply fa-fw"></i>Quick reply</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-history fa-fw"></i>Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><i class="fa fa-check text-success fa-fw"></i>Resolve Issue</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-times text-danger fa-fw"></i>Close Issue</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row ticket-card mt-3 pb-2 border-bottom">
-                <div class="col-1">
-                  <img class="img-sm rounded-circle" src="../assets/images/faces/face3.jpg" alt="profile image">
-                </div>
-                <div class="ticket-details col-9">
-                  <div class="d-flex">
-                    <p class="text-primary font-weight-bold mr-2 mb-0 no-wrap">John Doe :</p>
-                    <p class="font-weight-medium mr-1 mb-0">[#23246]</p>
-                    <p class="font-weight-bold mb-0 ellipsis">Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <p class="text-small text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <div class="row text-muted d-flex">
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Last responded :</p>
-                      <p class="Last-responded mr-2 mb-0">3 hours ago</p>
-                    </div>
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Due in :</p>
-                      <p class="Last-responded mr-2 mb-0">2 Days</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="ticket-actions col-2">
-                  <div class="btn-group dropdown">
-                    <button type="button" class="btn btn-teal dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Manage
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#"><i class="fa fa-reply fa-fw"></i>Quick reply</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-history fa-fw"></i>Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><i class="fa fa-check text-success fa-fw"></i>Resolve Issue</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-times text-danger fa-fw"></i>Close Issue</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row ticket-card mt-3 pb-2 border-bottom">
-                <div class="col-1">
-                  <img class="img-sm rounded-circle" src="../assets/images/faces/face4.jpg" alt="profile image">
-                </div>
-                <div class="ticket-details col-9">
-                  <div class="d-flex">
-                    <p class="text-primary font-weight-bold mr-2 mb-0 no-wrap">Marques Brownlee :</p>
-                    <p class="font-weight-medium mr-1 mb-0">[#23047]</p>
-                    <p class="font-weight-bold mb-0 ellipsis">Lorem ipsum dolor sit amet, consectetur.</p>
-                  </div>
-                  <p class="text-small text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum sequi a, nostrum.</p>
-                  <div class="row text-muted d-flex">
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Last responded :</p>
-                      <p class="Last-responded mr-2 mb-0">3 hours ago</p>
-                    </div>
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Due in :</p>
-                      <p class="Last-responded mr-2 mb-0">2 Days</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="ticket-actions col-2">
-                  <div class="btn-group dropdown">
-                    <button type="button" class="btn btn-teal dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Manage
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#"><i class="fa fa-reply fa-fw"></i>Quick reply</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-history fa-fw"></i>Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><i class="fa fa-check text-success fa-fw"></i>Resolve Issue</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-times text-danger fa-fw"></i>Close Issue</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
+            
               <div class="row ticket-card mt-3 pb-2">
-                <div class="col-1">
-                  <img class="img-sm rounded-circle" src="../assets/images/faces/face5.jpg" alt="profile image">
-                </div>
                 <div class="ticket-details col-9">
                   <div class="d-flex">
-                    <p class="text-primary font-weight-bold mr-2 mb-0 no-wrap">Marina John :</p>
-                    <p class="font-weight-medium mr-1 mb-0">[#23034]</p>
-                    <p class="font-weight-bold mb-0 ellipsis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi amet totam, dignissimos fugiat voluptates, ab magni, necessitatibus excepturi inventore, mollitia ipsa quaerat aliquam.</p>
+                    <p class="text-primary font-weight-bold mr-2 mb-0 no-wrap">Suggestion:</p>
+                    <p class="font-weight-bold mb-0 ellipsis">You spent a lot of money on {{ topCategory }} this month.</p>
                   </div>
-                  <p class="text-small text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae animi omnis, a?</p>
-                  <div class="row text-muted d-flex">
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Last responded :</p>
-                      <p class="Last-responded mr-2 mb-0">3 hours ago</p>
-                    </div>
-                    <div class="col-4 d-flex">
-                      <p class="mb-0 mr-2">Due in :</p>
-                      <p class="Last-responded mr-2 mb-0">2 Days</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="ticket-actions col-2">
-                  <div class="btn-group dropdown">
-                    <button type="button" class="btn btn-teal dropdown-toggle btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Manage
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#"><i class="fa fa-reply fa-fw"></i>Quick reply</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-history fa-fw"></i>Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><i class="fa fa-check text-success fa-fw"></i>Resolve Issue</a>
-                      <a class="dropdown-item" href="#"><i class="fa fa-times text-danger fa-fw"></i>Close Issue</a>
-                    </div>
-                  </div>
+                  <p class="text-small text-gray">Keep in mind your overall goals when spending, and don't forget what you've already spent.</p>
                 </div>
               </div>
+
+              <div class="row ticket-card mt-3 pb-2">
+                <div class="ticket-details col-9">
+                  <div class="d-flex">
+                    <p class="text-primary font-weight-bold mr-2 mb-0 no-wrap">Suggestion:</p>
+                    <p class="font-weight-bold mb-0 ellipsis">Check your credit score</p>
+                  </div>
+                  <p class="text-small text-gray">You can check your credit score up to four times a year for free. Make sure to check for fraudulent credit lines.</p>
+                </div>
+              </div>
+              
+              
+
             </div>
           </div>
         </div>
@@ -337,7 +176,9 @@ export default {
             purchases: [],
             recent_purchases: [],
             firebase: require('firebase'),
-            totalSpending: 0
+            totalSpending: 0,
+            topCategory: 'None',
+            spendingC: {}
         }
     },
     components: {AppPurchase},
@@ -349,16 +190,35 @@ export default {
             if(user) {
                 self.firebase.auth().currentUser.getIdToken().then(token => {
                     axios.get(`https://saviorc1.herokuapp.com/transactions?idToken=${token}&accountType=Checking`).then(response => {
+                        var category_counts = {}
+                        var max_count = 0
+                        var top_category = ""
                         for (let p of response.data) {
                             this.purchases.push(p)
                             this.totalSpending += p.amountSpent
-                    
+
+                            if (p.category in category_counts)
+                                category_counts[p.category] += 1
+                            else
+                                category_counts[p.category] = 1
+
+                            if (category_counts[p.category] > max_count) {
+                                max_count = category_counts[p.category]
+                                top_category = p.category
+                            }
+
                         }
+                        for (let key of Object.keys(category_counts)) {
+                            self.spendingC[key] = category_counts[key]
+                        }
+                        console.log(self.spendingC)
+                        self.topCategory = top_category
                         self.purchases.sort(function(a, b){
                                     var aa = a.date.split('/').reverse().join(),
                                         bb = b.date.split('/').reverse().join();
                                     return aa < bb ? -1 : (aa > bb ? 1 : 0);
                         });
+                        
 
                         var i = self.purchases.length - 1
                         for (var j = 0; j < 10; j++) {
