@@ -65,7 +65,7 @@ export default {
     sendPasswordResetEmail: function() {
       const self = this;
 
-      self.firebase.auth().currentUser.sendPasswordResetEmail()
+      // self.firebase.auth().currentUser.sendPasswordResetEmail()
 
     }
 
