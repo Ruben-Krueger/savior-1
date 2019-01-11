@@ -13,7 +13,6 @@
           </div>
           <div class="float-right">
             <p class="card-text text-center">{{title}}</p>
-            <p></p>
             <div class="fluid-container">
               <h3 class="card-title font-weight-bold text-right mb-0" style="display: inline">-{{discount}}%</h3>
             </div>

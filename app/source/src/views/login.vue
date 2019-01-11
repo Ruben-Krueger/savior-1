@@ -4,7 +4,7 @@
     <div class="wrapper d-flex align-items-center auth login-full-bg">
       <div class="row w-100">
         <div class="col-lg-6 mx-auto">
-          <div class="auth-form-dark text-left p-5">
+          <div class="auth-form-light text-left p-5">
             <h2>Login</h2>
             <h4 class="font-weight-light">Hello! Login to get started.</h4>
             <form class="pt-5">
@@ -25,6 +25,9 @@
                 <div class="mt-2 text-center">
                   <a @click="register()" class="auth-link text-black">Don't have an account? <span class="font-weight-medium">Sign up!</span></a>
                 </div>
+                <!--<div class="mt-2 text-center">-->
+                  <!--<a @click="sendPasswordResetEmail()" class="auth-link text-black">Forgot password? <span class="font-weight-medium">Send reset email</span></a>-->
+                <!--</div>-->
                 <div class="mt-2 text-center" id="error" v-if="error">
                   Your email or password was incorrect. Please try again.
                 </div>
@@ -58,15 +61,24 @@ export default {
           console.log(error)
         })
     },
-    register: function() { this.$router.push('/register') }
+    register: function() { this.$router.push('/register') },
+    sendPasswordResetEmail: function() {
+      const self = this;
+
+      self.firebase.auth().currentUser.sendPasswordResetEmail()
+
+    }
 
   }
 }
 </script>
 
 <style lang="sass" scoped>
-a
-    &:hover
+
+
+  a:hover
       text-decoration: underline
       cursor: pointer
+
+
 </style>

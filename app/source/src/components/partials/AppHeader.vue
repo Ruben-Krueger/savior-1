@@ -4,13 +4,13 @@
     <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
     </div>
     <b-collapse is-nav id="nav_collapse">
-      <h1 class="navbar-brand brand-logo"><a href="/" style="color: white">Savior</a></h1>
-\
+     <a href="/" class="navbar-brand brand-logo" style="color: white">Savior</a>
+
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-item @click="signout()"></i>Logout</b-nav-item>
 
-        <b-nav-item href="#"><img class="img-xs rounded-circle" :src="photoURL" alt="profile image"></b-nav-item>
+        <b-nav-item href="#"><img class="img-xs rounded-circle" src="../../assets/images/default.png" alt="profile image"></b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -36,5 +36,6 @@ export default {
 
 <style scoped lang="scss">
 .app-header {
+
 }
 </style>

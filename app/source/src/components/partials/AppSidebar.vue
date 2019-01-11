@@ -4,7 +4,7 @@
       <ul class="nav">
         <li class="nav-item nav-profile">
           <div class="nav-link">
-            <div class="profile-image"> <img :src="photoURL" alt="image"/> <span class="online-status online"></span> </div>
+            <div class="profile-image"> <img src="../../assets/images/default.png" alt="image"/> <span class="online-status online"></span> </div>
             <div class="profile-name">
               <p class="name">{{ username }}</p>
               <p class="designation"></p>
