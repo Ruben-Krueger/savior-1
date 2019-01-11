@@ -10,6 +10,9 @@ import dashboard from '../views/dashboard'
 import register from '../views/register'
 import login from '../views/login'
 
+// tracking
+import tracking from '../views/tracking'
+
 // Widgets
 import widgets from '../views/widgets'
 
@@ -50,6 +53,11 @@ export default new Router({
     path: '/widgets',
     name: 'widgets',
     component: widgets
+  },
+  {
+    path: '/tracking',
+    name: 'tracking',
+    component: tracking
   },
   {
     path: '/404',
