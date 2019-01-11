@@ -25,6 +25,7 @@ import AppFooter from '../src/components/partials/AppFooter'
 
 // setup firebase
 import firebase from 'firebase'
+
 var config = {
     apiKey: "AIzaSyCtEYxUYW_3N2ro-U-CNMVGhbXKgpN80Os",
     authDomain: "savior-42229.firebaseapp.com",
@@ -44,23 +45,28 @@ export default{
   mounted() {
 
     const self = this
-    
-    firebase.auth().onAuthStateChanged(function(user) {
+    self.firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // fetch user data
-        self.userData['email'] = user.email
-      } else {
-        self.userData['email'] = ''
+        self.userData['email'] = user.email;
+        self.userData['photoUrl'] = user.photoURL;
+
+        self.firebase.auth().currentUser.getIdToken().then(token => self.userData['token'] = token && console.log("saved"));
+      }
+      else {
+        self.userData['email'] = '';
+        self.userData['photoUrl'] = '../../assets/images/default.png';
+        self.userData['token'] = '';
+
         // No user is signed in.
         self.$router.push('login')
       }
     });
-    
   },
-  data() {
+  data () {
     return {userData: {
-      email: 'example@example.com'
-    }}
+      email: 'example@example.com', photoUrl: '../../assets/images/default.png', token: ''
+    }, firebase: require('firebase')}
   }
 }
 </script>
